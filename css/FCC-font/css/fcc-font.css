@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?69521381');
+  src: url('../font/fontello.eot?69521381#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?69521381') format('woff2'),
+       url('../font/fontello.woff?69521381') format('woff'),
+       url('../font/fontello.ttf?69521381') format('truetype'),
+       url('../font/fontello.svg?69521381#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?69521381#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="FCC-"]:before, [class*=" FCC-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.FCC-css3:before { content: '\e800'; } /* '' */
+.FCC-d3:before { content: '\e801'; } /* '' */
+.FCC-node:before { content: '\e802'; } /* '' */
+.FCC-nodejs:before { content: '\e803'; } /* '' */
+.FCC-react:before { content: '\e804'; } /* '' */
+.FCC-h5:before { content: '\e805'; } /* '' */
+.FCC-twitter:before { content: '\f099'; } /* '' */
+.FCC-facebook:before { content: '\f09a'; } /* '' */
+.FCC-github-circled:before { content: '\f09b'; } /* '' */
+.FCC-gplus-squared:before { content: '\f0d4'; } /* '' */
+.FCC-gplus:before { content: '\f0d5'; } /* '' */
+.FCC-linkedin:before { content: '\f0e1'; } /* '' */
+.FCC-angle-left:before { content: '\f104'; } /* '' */
+.FCC-angle-right:before { content: '\f105'; } /* '' */
+.FCC-angle-up:before { content: '\f106'; } /* '' */
+.FCC-angle-down:before { content: '\f107'; } /* '' */
+.FCC-tumblr:before { content: '\f173'; } /* '' */
+.FCC-tumblr-squared:before { content: '\f174'; } /* '' */
+.FCC-apple:before { content: '\f179'; } /* '' */
+.FCC-weibo:before { content: '\f18a'; } /* '' */
+.FCC-renren:before { content: '\f18b'; } /* '' */
+.FCC-google:before { content: '\f1a0'; } /* '' */
+.FCC-behance:before { content: '\f1b4'; } /* '' */
+.FCC-behance-squared:before { content: '\f1b5'; } /* '' */
+.FCC-soundcloud:before { content: '\f1be'; } /* '' */
+.FCC-database:before { content: '\f1c0'; } /* '' */
+.FCC-jsfiddle:before { content: '\f1cc'; } /* '' */
+.FCC-git-squared:before { content: '\f1d2'; } /* '' */
+.FCC-tencent-weibo:before { content: '\f1d5'; } /* '' */
+.FCC-qq:before { content: '\f1d6'; } /* '' */
+.FCC-wechat:before { content: '\f1d7'; } /* '' */
+.FCC-lastfm:before { content: '\f202'; } /* '' */
+.FCC-lastfm-squared:before { content: '\f203'; } /* '' */
+.FCC-facebook-official:before { content: '\f230'; } /* '' */
+.FCC-twitter-squared:before { content: '\f304'; } /* '' */
+.FCC-facebook-squared:before { content: '\f308'; } /* '' */
+.FCC-linkedin-squared:before { content: '\f30c'; } /* '' */

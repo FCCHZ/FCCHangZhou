@@ -1,0 +1,915 @@
+/* 
+    Shmaur 
+} */
+
+
+
+
+body {
+    font-family: "Work Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #828282;
+    background: #fff;
+}
+
+
+/* =======================================================
+*
+*   nav 样式
+*
+* ======================================================= */
+#freeCC-offcanvas {
+    position: absolute;
+    z-index: 1901;
+    width: 270px;
+    background: black;
+    top: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 45px 40px 40px 40px;
+    overflow-y: auto;
+    display: none;
+    -moz-transform: translateX(270px);
+    -webkit-transform: translateX(270px);
+    -ms-transform: translateX(270px);
+    -o-transform: translateX(270px);
+    transform: translateX(270px);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+    #freeCC-offcanvas {
+        display: block;
+    }
+}
+
+.offcanvas #freeCC-offcanvas {
+    -moz-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+#freeCC-offcanvas a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#freeCC-offcanvas a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#freeCC-offcanvas ul {
+    padding: 0;
+    margin: 0;
+}
+
+#freeCC-offcanvas ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#freeCC-offcanvas ul li > ul {
+    padding-left: 20px;
+    display: none;
+}
+
+#freeCC-offcanvas ul li.offcanvas-has-dropdown > a {
+    display: block;
+    position: relative;
+}
+
+#freeCC-offcanvas ul li.offcanvas-has-dropdown > a:after {
+    position: absolute;
+    right: 0px;
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e921";
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.2);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#freeCC-offcanvas ul li.offcanvas-has-dropdown.active a:after {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+/* =======================================================
+*
+*   FCC 介绍 样式
+*
+* ======================================================= */
+/* icon*/
+.landing-skill-icon {
+  color: #27acff;
+  font-size: 6rem;
+  
+}
+@media (max-width: 643px) {
+  .landing-skill-icon {
+  font-size: 3rem;
+  
+}
+.icon-content h4{
+    font-size: 1.3rem;
+}
+}
+.icon-content {
+  padding: 25px 0;
+
+}
+#page {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.offcanvas #page {
+    overflow: hidden;
+    position: absolute;
+}
+
+.offcanvas #page:after {
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 101;
+    background: rgba(0, 0, 0, 0.7);
+    content: "";
+}
+
+a {
+    color: #0C9CEE;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #0C9CEE;
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure {
+    color: #000;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+
+::-webkit-selection {
+    color: #fff;
+    background: #0C9CEE;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #0C9CEE;
+}
+
+::selection {
+    color: #fff;
+    background: #0C9CEE;
+}
+
+.freeCC-nav {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding: 40px 0;
+    z-index: 1001;
+}
+
+@media screen and (max-width: 768px) {
+    .freeCC-nav {
+        padding: 20px 0;
+    }
+}
+
+.freeCC-nav #freeCC-logo {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.freeCC-nav a {
+    padding: 5px 10px;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .freeCC-nav .menu-1 {
+        display: none;
+    }
+}
+
+.freeCC-nav ul {
+    padding: 0;
+    margin: 2px 0 0 0;
+}
+
+.freeCC-nav ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline;
+}
+
+.freeCC-nav ul li a {
+    font-size: 16px;
+    padding: 30px 10px;
+    color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.freeCC-nav ul li a:hover,
+.freeCC-nav ul li a:focus,
+.freeCC-nav ul li a:active {
+    color: white;
+}
+
+
+.freeCC-nav ul li.active > a {
+    color: #fff !important;
+}
+
+#freeCC-header {
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#freeCC-header a {
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#freeCC-header a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+
+.freeCC-cover {
+    height: 800px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.freeCC-cover .overlay {
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.freeCC-cover > .freeCC-container {
+    position: relative;
+    z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+    .freeCC-cover {
+        height: 600px;
+    }
+}
+
+.freeCC-cover .display-t,
+.freeCC-cover .display-tc {
+    z-index: 9;
+    height: 900px;
+    display: table;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .freeCC-cover .display-t,
+    .freeCC-cover .display-tc {
+        height: 600px;
+    }
+}
+
+.freeCC-cover.freeCC-cover-sm .display-t,
+.freeCC-cover.freeCC-cover-sm .display-tc {
+    height: 600px;
+    display: table;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .freeCC-cover.freeCC-cover-sm .display-t,
+    .freeCC-cover.freeCC-cover-sm .display-tc {
+        height: 400px;
+    }
+}
+
+#freeCC-header .display-tc,
+#freeCC-counter .display-tc,
+.freeCC-cover .display-tc {
+    display: table-cell !important;
+    vertical-align: middle;
+}
+
+#freeCC-header .display-tc h1,
+#freeCC-header .display-tc h2,
+#freeCC-counter .display-tc h1,
+#freeCC-counter .display-tc h2,
+.freeCC-cover .display-tc h1,
+.freeCC-cover .display-tc h2 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#freeCC-header .display-tc h1,
+#freeCC-counter .display-tc h1,
+.freeCC-cover .display-tc h1 {
+    margin-bottom: 0px;
+    font-size: 60px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    #freeCC-header .display-tc h1,
+    #freeCC-counter .display-tc h1,
+    .freeCC-cover .display-tc h1 {
+        font-size: 40px;
+    }
+}
+
+#freeCC-header .display-tc h2,
+#freeCC-counter .display-tc h2,
+.freeCC-cover .display-tc h2 {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+#freeCC-header .display-tc .btn,
+#freeCC-counter .display-tc .btn,
+.freeCC-cover .display-tc .btn {
+    padding: 15px 30px;
+    background: #f35f55;
+    color: #fff;
+    border: none !important;
+    font-size: 18px;
+    text-transform: uppercase;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#freeCC-header .display-tc .btn:hover,
+#freeCC-counter .display-tc .btn:hover,
+.freeCC-cover .display-tc .btn:hover {
+    background: #f14034 !important;
+    -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
+    -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
+    box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
+}
+
+.freeCC-bg-section {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+
+#freeCC-join,
+#freeCC-works,
+#freeCC-project,
+#freeCC-about,
+#freeCC-contact
+ {
+    padding: 3em 0;
+    clear: both;
+}
+
+
+@media screen and (max-width: 768px) {
+    #freeCC-join,
+    #freeCC-works,
+    #freeCC-project,
+    #freeCC-about,
+    #freeCC-contact
+    {
+        padding: 1em 0;
+    }
+    #freeCC-footer {
+      height: 80px;
+    }
+}
+
+#freeCC-core-feature {
+    padding-top: 3em;
+    clear: both;
+}
+
+@media screen and (max-width: 768px) {
+    #freeCC-core-feature {
+        padding-top: 1em;
+        padding-bottom: 0em;
+    }
+}
+
+.features {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.features .col-half {
+    width: 100%;
+    text-align: center;
+}
+
+.features .col-half {
+    display: table;
+}
+
+.features .col-half .table-c {
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+.features .col-half .desc h2{
+        margin-top: 2em;
+
+    }
+    .features .col-half .desc p{
+        margin-bottom: 1em;
+        text-indent: 2em;
+    }
+@media screen and (max-width: 768px) {
+    .features .col-half {
+        width: 100%;
+        text-align: center;
+    }
+    .features .col-half .desc {
+        width: 100% !important;
+      
+    }
+}
+
+
+
+/* =======================================================
+*
+*  活动剪影 样式
+*
+* ======================================================= */
+
+#freeCC-activity .container .activity-Tit {
+    text-align: center;
+}
+
+.fc-prev i,
+.fc-next i {
+    font-size: 6em;
+    padding-top: 150%;
+}
+
+.carousel-control {
+    opacity: .3;
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+    opacity: .5;
+}
+.carousel {
+  margin-bottom: 3em;
+}
+
+/* =======================================================
+*
+*  加入我们 样式
+*
+* ======================================================= */
+.fcc-icon {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    display: table;
+    margin: 0 auto 30px auto;
+}
+#join {
+  margin-left: 15%;
+}
+@media (max-width: 642px) {
+  #join {
+    margin-left: 1%
+  }
+}
+.fcc-icon i {
+    font-size: 5rem;
+    text-align: center;
+}
+.fcc-icon img {
+    width: 100px;
+    height: 100px;
+}
+#freeCC-join #fcc-join {
+  height: 354px;
+}
+.display-f {
+  margin-top: 1em;
+}
+.FCC-icons i {
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    margin-left: 1em;
+    font-size: 1.5rem;
+}
+.fcc-heading {
+  margin-bottom: 1em;
+}
+
+/* =======================================================
+*
+*  成员作品 样式
+*
+* ======================================================= */
+.feature-center {
+    text-align: center;
+    padding: 0 20px;
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.feature-center .icon {
+    width: 90px;
+    height: 90px;
+    background: #efefef;
+    display: table;
+    text-align: center;
+    margin: 0 auto 30px auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+}
+
+.feature-center {
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .feature-center {
+        margin-bottom: 50px;
+    }
+}
+
+.feature-center .icon {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.feature-center p {
+    margin-bottom: 30px;
+}
+
+.activity-Tit {
+  margin: 0 auto;
+}
+.activity-Tit h2 {
+   margin-top: 1em;
+    font-size: 36px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #EEE;
+    text-align: center;
+}
+
+ .activity-Tit p {
+ 
+    font-size: 18px;
+    line-height: 1.5;
+    color: #EEE;
+     text-indent:2em;
+}
+.display-fc .FCC-github-circled {
+  color: #EEE;
+}
+.fcc-center p{
+  color: #FFF;
+}
+#freeCC-join {
+    background: #0c9cee;
+}
+
+#freeCC-join .fcc-heading h2 {
+    color: #fff;
+    margin-bottom: 20px !important;
+}
+
+#freeCC-join .fcc-heading p {
+    color: rgba(255, 255, 255, 0.5);
+}
+/* =======================================================
+*
+*  footer. 样式
+*
+* ======================================================= */
+
+
+#freeCC-footer {
+  background: #efefef;
+  height: 130px;
+  padding-top: 30px;
+}
+@media screen and (max-width: 768px) {
+    #freeCC-footer {
+      height: 80px;
+    }
+}
+/* =======================================================
+*
+*  回到顶部 样式
+*
+* ======================================================= */
+.gototop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.gototop.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.gototop a {
+    width: 50px;
+    height: 50px;
+    display: table;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.gototop a i {
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.gototop a:hover,
+.gototop a:active,
+.gototop a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.freeCC-nav-toggle {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.freeCC-nav-toggle.active i::before,
+.freeCC-nav-toggle.active i::after {
+    background: #444;
+}
+
+.freeCC-nav-toggle:hover,
+.freeCC-nav-toggle:focus,
+.freeCC-nav-toggle:active {
+    outline: none;
+    border-bottom: none !important;
+}
+
+.freeCC-nav-toggle i {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 2px;
+    color: #252525;
+    font: bold 14px/.4 Helvetica;
+    text-transform: uppercase;
+    text-indent: -55px;
+    background: #252525;
+    transition: all .2s ease-out;
+}
+
+.freeCC-nav-toggle i::before,
+.freeCC-nav-toggle i::after {
+    content: '';
+    width: 25px;
+    height: 2px;
+    background: #252525;
+    position: absolute;
+    left: 0;
+    transition: all .2s ease-out;
+}
+
+.freeCC-nav-toggle.freeCC-nav-white > i {
+    color: #fff;
+    background: #fff;
+}
+
+.freeCC-nav-toggle.freeCC-nav-white > i::before,
+.freeCC-nav-toggle.freeCC-nav-white > i::after {
+    background: #fff;
+}
+
+.freeCC-nav-toggle i::before {
+    top: -7px;
+}
+
+.freeCC-nav-toggle i::after {
+    bottom: -7px;
+}
+
+.freeCC-nav-toggle:hover i::before {
+    top: -10px;
+}
+
+.freeCC-nav-toggle:hover i::after {
+    bottom: -10px;
+}
+
+.freeCC-nav-toggle.active i {
+    background: transparent;
+}
+
+.freeCC-nav-toggle.active i::before {
+    top: 0;
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+}
+
+.freeCC-nav-toggle.active i::after {
+    bottom: 0;
+    -webkit-transform: rotateZ(-45deg);
+    -moz-transform: rotateZ(-45deg);
+    -ms-transform: rotateZ(-45deg);
+    -o-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+}
+
+.freeCC-nav-toggle {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    z-index: 21;
+    padding: 6px 0 0 0;
+    display: block;
+    margin: 0 auto;
+    display: none;
+    height: 44px;
+    width: 44px;
+    z-index: 2001;
+    border-bottom: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .freeCC-nav-toggle {
+        display: block;
+    }
+}
+/* =======================================================
+*
+*   自定义按钮 样式
+*
+* ======================================================= */
+.btn {
+    margin-right: 4px;
+    margin-bottom: 4px;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    padding: 8px 20px;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.btn-primary {
+    background: #0C9CEE;
+    color: #fff;
+    border: 2px solid #0C9CEE;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background: #20a7f4 !important;
+    border-color: #20a7f4 !important;
+}
+/* =======================================================
+*
+*   loading 样式
+*
+* ======================================================= */
+.freeCC-loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../images/loader.gif) center no-repeat #fff;
+}
+
+.js .animate-box {
+    opacity: 0;
+}
+
+
